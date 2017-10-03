@@ -3,7 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour {
-
+	public GameObject rules;
+	public void ShowRules()
+	{
+		rules.SetActive (true);
+	}
+	public void HideRules()
+	{
+		rules.SetActive (false);
+	}
     public void Size6()
     {
         Info.size = 6;
